@@ -1,0 +1,52 @@
+* {
+    background-color:deeppink;
+    font-family: "roboto";
+    color: white;
+}
+
+br {
+   margin: 10px;
+}
+
+.info {
+    text-align: center;
+}
+
+.form {
+    padding-left: 10px;
+}
+
+input,
+select, 
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.output_div {
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50vw;
+}
+
+.output_div p {
+    background-color: white;
+    color:deeppink;
+    font-weight: bold;
+    
+}
+
+#output {
+    font-style: italic;
+    font-weight: unset;
+}
+
+#history {
+    font-style: italic;
+    font-weight: unset;
+}

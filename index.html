@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie/Series List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="info">
+        <h1>Movie/Series List</h1>
+        <p>Your favourite reviews of your favourite films/series listed here</p>
+    </div>
+    <div class="form">
+        <label>
+            Name:
+            <input type="name" id="name" placeholder="Name"> 
+        </label>
+        <br>
+        <label>
+            Age Rating:
+            <input type="radio" name="ageRating" class="ageRating" value="A" checked> A
+            <input type="radio" name="ageRating" class="ageRating" value="6"> 6
+            <input type="radio" name="ageRating" class="ageRating" value="9"> 9
+            <input type="radio" name="ageRating" class="ageRating" value="12"> 12
+            <input type="radio" name="ageRating" class="ageRating" value="15"> 15
+            <input type="radio" name="ageRating" class="ageRating" value="18"> 18
+        </label>
+        <br>
+        <label>
+            Suits:
+            <input type="checkbox" class="suits" value="children"> Children
+            <input type="checkbox" class="suits" value="teenagers"> Teenagers
+            <input type="checkbox" class="suits" value="adults"> Adults
+            <input type="checkbox" class="suits" value="seniors"> Seniors
+        </label>
+        <br>
+        <label>
+            Category:
+            <select name="category" id="category">
+                <option value="action" selected>Action</option>
+                <option value="fairy-tale">Fairy Tale</option>
+                <option value="animation">Animation</option>
+                <option value="biography">Biography</option>
+                <option value="comedy">Comedy</option>
+                <option value="documentary">Documentary</option>
+                <option value="drama">Drama</option>
+                <option value="family">Family</option>
+                <option value="film-noir">Film Noir</option>
+                <option value="history">History</option>
+                <option value="horror">Horror</option>
+                <option value="music">Music</option>
+                <option value="musical">Musical</option>
+                <option value="adventure">Adventure</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="short-film">Short Film</option>
+                <option value="sport">Sport</option>
+                <option value="superhero">Superhero</option>
+                <option value="thriller">Thriller</option>
+                <option value="war">War</option>
+                <option value="western">Western</option>
+                <option value="international">International</option>
+            </select>        
+        </label>
+        <br>
+        <label>
+            Rating:
+            <input type="number" min="0" max="10" step="0.1" id="rating">
+        </label>
+        <br>
+        <button onclick="formHandler()">Submit</button>
+    </div>
+    <br>
+    <div class="output_div">
+        <p>Output:</p>
+        <p id="output"></p> 
+    </div>
+    <div class="output_div">
+        <p>Your previous films are:</p>
+        <p id="history"></p>
+    </div>
+</body>
+</html>
